@@ -1,0 +1,277 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    max-width: 100%;
+    line-height: 1.2;
+    color: white;
+    background-color: #f88a8a; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    font-weight: bold;
+}
+
+nav a {
+    color: #ffffff; 
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.beginfoto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.beginfoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40vh;
+    padding-bottom: 20px;
+    color: #ffffff;
+    z-index: 1;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+    font-size: 400%;
+}
+
+.title {
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; 
+      transform: translateY(20px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+  }
+
+p:nth-child(2) {
+    color: rgb(255, 255, 255); 
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: large;
+    text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+p:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 20%;
+    color: white;
+    padding-bottom: 5%;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0.5px 3px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.foto-container {
+    display: flex;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+
+.linkfoto {
+    width: 75%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkfoto img {
+    width: 75%;
+    transition: transform 0.6s;
+}
+
+.linkfoto h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    margin: 0; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.linkfoto:hover img {
+    transform: scale(1.1);
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.linkfoto:hover h2 {
+    color: salmon;
+    scale: 100%;
+}
+
+.must-visit-body img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.must-visit-body {
+    color: white;
+}
+
+.must-visit-body h1 {
+    padding-top: 40px;
+}
+
+.must-visit-body h1, 
+.must-visit-body h2, 
+.must-visit-body p {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-shadow: none;
+    font-style:normal;
+}
+
+.must-visit-body p {
+    font-weight: normal;
+}
+
+.must-visit-body h1{
+    font-size:300%;
+}
+
+.nietdoen img{
+    position: fixed;
+    opacity: 40%;
+    z-index:-1;
+    width:fit-content;
+}
+
+.nietdoen h1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    color: white;
+    font-size: 300%;
+}
+
+.nietdoen h2 {
+  color: black;
+  border: 2px solid rgb(247, 224, 89);
+  background-color: rgb(247, 224, 89);
+  padding: 10px; 
+  margin: 10px; 
+  width: 8em; 
+  height: 10em; 
+  text-align: center; 
+  }
+  
+  .nietdoen p {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .rij1 :hover{
+    transform: scale(1.1);
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+
+  .rij2 :hover{
+    transform: scale(1.1);
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+li h2 {
+    color: white;
+    background-color: #f88a8a;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+ .reisdagboek img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.reisdagboek h1,
+.reisdagboek h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reisdagboek h1{
+    padding-top: 5%;
+    font-size: 300%;
+}
+
+.reisdagboek p {
+    font-weight: normal;
+    text-shadow: none;
+    font-style:normal;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-bottom: -10px;
+    padding-bottom: 30px;
+}
